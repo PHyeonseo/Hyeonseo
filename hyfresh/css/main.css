@@ -1,0 +1,217 @@
+* {margin: 0;padding: 0;}
+ul,li{list-style: none;}
+img {display: block;}
+
+
+
+header {
+  width: 100%;
+}
+/******************** headerWrap ********************/
+.headerWrap {
+  width: 1070px;
+  margin: 0 auto;
+}
+.headerWrap .lnb {
+  width: 100%;
+  overflow: hidden;
+}
+.headerWrap .lnb ul {
+  float: right;
+}
+.headerWrap .lnb li {
+  display: inline-block;
+  font-size: 12px;
+  color: #ccc;
+  margin-right: 20px;
+}
+.headerWrap .lnb li:last-child {
+  margin: 0;
+}
+
+.headerWrap .logo {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo .log {
+  float: left;
+}
+.logo .car {
+  width: 245px;
+  margin-top: 2.5px;
+}
+.logo .car img {
+  float: left;
+}
+.logo .car .txtBox {
+  margin-top: 3px;
+  font-weight: 700;
+  float: left;
+}
+.logo .car .txtBox p:first-child {
+  color: green; 
+}
+.logo .hyfreshLogo {
+  margin-left: 200px;
+}
+
+.logo .search {
+  width: 245px;
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  color: #ccc;
+  float: right;
+}
+.logo .search input {
+  padding: 3px 40px 3px 10px;
+  border: none;
+}
+
+/******************** gnbBox ********************/
+.gnbBox {
+  width: 100%;
+  margin-top: 10px;
+  border-top: 1px solid  #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.gnbBox .gnb {
+  width: 1070px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.gnb .cate {
+  display: block;
+  float: left;
+  width: 120px;
+  padding: 12px;
+  margin-right: 80px;
+  color: rgb(0, 195, 255);
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  position: relative;
+}
+.gnb>ul {
+  float: left;
+  width: 500px;
+}
+.gnb>ul>li {
+  padding: 12px;
+  float: left;
+}
+.gnb .life {
+  float: right;
+  font-size: 14px;
+  color: #ccc;
+}
+.gnb .life li {
+  padding: 12px;
+  float: left;
+}
+
+/******************** fullDown ********************/
+.fullDown {
+  width: 1070px;
+  height: 0;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: all 0.3s;
+  background: white;
+  position: absolute; /*포지션 릴레이티비 안먹음*/
+  left: 425px;
+}
+.fullDown ul {
+  text-align: center;
+}
+.fullDown li {
+  padding: 8px;
+}
+.fullDown li:hover {
+  color: red;
+}
+#check {display: none;}
+#check:checked ~ .fullDown {height: 260px;}
+
+/******************** mainVisual ********************/
+.mainVisual {
+  width: 100%;
+  margin-bottom: 40px;
+}
+.mainVisual .mainSlide {
+  width: 100%;
+  height: 370px;
+}
+.mainVisual .mainSlide img {
+  width: 100%;
+  height: auto;
+}
+
+/******************** product ********************/
+.product {
+  width: 1070px;
+  margin: 0 auto;
+}
+.product h3 {
+  text-align: center;
+  margin: 20px 0;
+}
+.product .top {
+  width: 1070px;
+  overflow: hidden;
+}
+.product .top .proT {
+  width: 260px;
+  height: 370px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+  margin-right: 10px;
+}
+.product .top .proT:last-child {
+  margin: 0;
+}
+.product .top figure {
+  width: 260px;
+  height: 260px;
+  border: 1px solid black;
+  box-sizing: border-box;  
+}
+.product .top .txtBox {
+  width: 240px;
+  height: 90px;
+  margin: 10px auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.product .top .txtBox .txt01 {
+  width: 240px;
+  font-size: 12px;
+  font-weight: 300;
+  color: #555;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product .top .txtBox .txt02 {
+  width: 240px;
+  font-size: 15px;
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.product .top .txtBox .price {
+  margin: 5px 0;
+  font-size: 15px;
+  color: rgb(45, 166, 214);
+}
+.product .top .txtBox .price>del {
+  color: #ccc;
+  font-size: 12px;
+}
+.product .top .txtBox .price>span {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(45, 166, 214);
+}

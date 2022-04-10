@@ -1,0 +1,243 @@
+* {margin: 0;padding: 0;}
+ul,li {list-style: none;}
+a {text-decoration: none;color: black;}
+img {display: block;}
+
+header {width: 100%;}
+/************************* inner *************************/
+.inner {
+  width: 1070px;
+  margin: 0 auto;
+}
+.gnb {
+  overflow: hidden;
+}
+.gnb ul {
+  float: right;
+}
+.gnb li {
+  display: inline-block;
+  padding: 8px;
+  font-size: 12px;
+}
+.gnb li a {
+  color: #555;
+  font-weight: bold;
+}
+
+.logo {
+  height: 80px;
+}
+.logo .car {
+  width: 300px;
+  margin-right: 150px;
+  margin-top: 10px;
+  float: left;
+}
+.logo .car .carImg {
+  width: 75px;
+  height: 55px;
+  float: left;
+}
+.logo .car p {
+  font-size: 14px;
+  font-weight: bold;
+}
+.logo .car p:nth-of-type(1) {
+  margin-top: 10px;
+  color: green;
+}
+.logo .logoImg {
+  width: 180px;
+  height: 60px;
+  float: left;
+  margin-top: 10px;
+}
+.logo .search {
+  width: 240px;
+  height: 22px;
+  float: right;
+  margin-top: 25px;
+  border: 1px solid #ccc;
+}
+.logo .search input {
+  width: 205px;
+  height: 15px;
+  border: none;
+  margin-left: 10px;
+}
+.logo .search input::placeholder {
+  font-size: 10px;
+  font-weight: bold;
+  color: #ccc;
+}
+.logo .search i {
+  font-weight: bold;
+  color: #ccc;
+}
+
+/************************* headerBottom *************************/
+.headerBottom {
+  width: 100%;
+  height: 37px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid  #ccc;
+}
+.lnb {
+  width: 1070px;
+  margin: 0 auto;
+  /* overflow: hidden; */
+}
+.cateGori {
+  float: left;
+  padding: 8px;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+  position: relative;
+  margin-right: 95px;
+}
+.cateGori label {
+  color: rgb(64, 174, 218);
+  font-size: 14px;
+  font-weight: bold;
+}
+.cateGori label i {
+  margin-right: 7px;
+}
+.cateGori .cateBox {
+  width: 1070px;
+  height: 0px;
+  position: absolute;
+  top: 38px;
+  left: 0;
+  background: white;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+#check01 {display: none;}
+#check01:checked ~ .cateBox {height: 250px;}
+.cateGori .cateBox {
+  text-align: center;
+}
+.cateGori .cateBox li {
+  padding: 8px 0;
+  font-size: 14px;
+}
+.cateGori .cateBox li:hover {
+  color: red;
+}
+
+.menu {
+  float: left;
+  font-size: 14px;
+}
+.menu li {
+  float: left;
+  padding: 8px 25px;
+  font-weight: bold;
+}
+.life {
+  float: right;
+  font-size: 12px;
+  margin-top: 5px;
+ 
+}
+.life li {
+  display: inline-block;
+  padding: 5px;
+  font-weight: bold;
+  color: #555;
+  position: relative;
+}
+.life li::after {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 10px;
+  background: #ccc;  
+  position: absolute;
+  top: 9px;
+  left: -2px;
+}
+.life li:nth-child(1)::after {
+  display: none;
+}
+
+/************************* mainVisual *************************/
+.mainVisual {width: 100%; margin-bottom: 40px;}
+.mainSlide {
+  width: 100%;
+  height: 370px;
+}
+.mainSlide img {
+  width: 100%;
+  height: auto;
+}
+/************************* product *************************/
+.product {width: 100%;}
+.product .proBox {
+  width: 1070px;
+  margin: 0 auto;
+}
+.product .proBox h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.product .proTop {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.product .pro {
+  width: 260px;
+  height: 360px;
+  float: left;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.product .pro .proImg {
+  overflow: hidden;
+}
+.product .pro img {
+  transition: all 0.2s;
+}
+.product .pro img:hover {
+  transform: scale(1.1);
+}
+.product .pro:last-child {
+  margin: 0;
+}
+.product .txtBox {
+  width: 250px;
+  height: 100px;
+  margin: 20px 0 15px 10px;
+}
+.product .proTop .txtBox .assistant {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 12px;
+  font-weight: bold;
+  color: #555;
+}
+.product .txtBox .mainTxt {
+  width: 250px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+}
+.product .txtBox .price del {
+  color: #ccc;
+  font-size: 10px;
+}
+.product .txtBox .price {
+  color: rgb(64, 174, 218);
+  font-weight: bold;
+  margin-top: 5px;
+}
+.product .proTop .txtBox .price span {
+  font-size: 12px;
+}

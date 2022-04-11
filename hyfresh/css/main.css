@@ -172,10 +172,10 @@ header {width: 100%;}
 }
 .mainSlide img {
   width: 100%;
-  height: auto;
+  height: 370px;
 }
 /************************* product *************************/
-.product {width: 100%;}
+.product {width: 100%; margin-bottom: 40px;}
 .product .proBox {
   width: 1070px;
   margin: 0 auto;
@@ -187,6 +187,9 @@ header {width: 100%;}
 .product .proTop {
   overflow: hidden;
   margin-bottom: 10px;
+}
+.product .proBottom {
+  overflow: hidden;
 }
 .product .pro {
   width: 260px;
@@ -240,4 +243,157 @@ header {width: 100%;}
 }
 .product .proTop .txtBox .price span {
   font-size: 12px;
+}
+
+/************************* banner *************************/
+.banner{width: 100%; margin-bottom: 40px;}
+.banner .ban01 {
+  width: 1900px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+/************************* new *************************/
+.new {width: 100%; margin-bottom: ;}
+.new .newBox {
+  width: 1070px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.new .newBox h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.new .newBox .newp {
+  float: left;
+  position: relative;
+}
+.new .newBox .newImg {
+  width: 345px;
+  height: 345px;
+}
+.new .newBox .new02 {
+  margin: 0 17.5px;
+}
+.new .newBox .txtBox {
+  width: 345px;
+  height: 0;
+  font-size: 30px;
+  text-align: center;
+  color: rgba(0,0,0,0);
+  background-color: rgba(0,0,0,0.5);
+  position: absolute;
+  top:0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.3s, color 0.3s 0.3s; 
+}
+.new .newBox .txtBox .line {
+  width: 305px;
+  margin: 10px auto;
+  border-bottom: 1px solid white;
+}
+.new .newBox .txtBox del {
+  font-size: 17px;
+  color: white;
+  
+}
+.new .newBox .txtBox p:first-child {
+  margin-top: 140px;
+}
+.new .newBox .new01:hover .txtBox {
+  height: 345px;
+  color: white;
+}
+.new .newBox .new02:hover .txtBox {
+  height: 345px;
+  color: white;
+}
+.new .newBox .new03:hover .txtBox {
+  height: 345px;
+  color: white;
+}
+
+
+/************************* recipe *************************/
+.recipe {
+  width: 100%;
+}
+.recipe .recipe_bg {
+  width: 1900px;
+  height: 470px;
+  margin: 40px auto 0 auto;
+  background: url(../img/recipe_bg.jpg);
+}
+.recipe .recipeBox {
+  width: 1070px;
+  margin: 30px auto;
+  overflow: hidden;
+}
+.recipe .recipeBox p {
+  text-align: center;
+  padding: 20px 0 10px 0;
+}
+.recipe .recipeBox h3 {
+  font-size: 30px;
+  font-weight: 100;
+  text-align: center;
+}
+.recipe .recipeBox h3 span {
+  font-weight: bold;
+}
+
+.recipe .recipeLeft {
+  width: 530px;
+  height: 230px;
+  float: left;
+  margin-right: 10px;
+  position: relative;
+}
+.recipe .recipeLeft .recipe01 {
+  width: 345px;
+  height: 230px;
+  float: left;
+}
+.recipe .recipeLeft .recipe01_txt {
+  width: 185px;
+  height: 230px;
+  float: left;
+}
+.recipe .recipeLeft .txtBox {
+  width: 345px;
+  height: 230px;
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.5);
+
+}
+.recipe .recipeLeft .txtBox p {
+  margin-top: 70px;
+}
+.recipe .recipeLeft .txtBox a {
+  padding: 4px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 30px;
+}
+
+
+.recipe .recipeRight {
+  width: 530px;
+  height: 230px;
+  float: left;
+}
+.recipe .recipeRight .recipe02 {
+  width: 345px;
+  height: 230px;
+  float: left;
+}
+.recipe .recipeRight .recipe02_txt {
+  width: 185px;
+  height: 230px;
+  float: left;
 }

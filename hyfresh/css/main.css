@@ -25,6 +25,7 @@ header {width: 100%;}
   font-weight: bold;
 }
 
+
 .logo {
   height: 80px;
 }
@@ -33,11 +34,21 @@ header {width: 100%;}
   margin-right: 150px;
   margin-top: 10px;
   float: left;
+  overflow: hidden;
 }
 .logo .car .carImg {
   width: 75px;
   height: 55px;
   float: left;
+  animation: bus 3s infinite reverse;
+}
+@keyframes bus {
+  from {
+    transform: translateX(150px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 .logo .car p {
   font-size: 14px;
@@ -254,7 +265,7 @@ header {width: 100%;}
 }
 
 /************************* new *************************/
-.new {width: 100%; margin-bottom: ;}
+.new {width: 100%; margin-bottom: 50px;}
 .new .newBox {
   width: 1070px;
   margin: 0 auto;
@@ -290,8 +301,11 @@ header {width: 100%;}
 }
 .new .newBox .txtBox .line {
   width: 305px;
+  height: 3px;
   margin: 10px auto;
-  border-bottom: 1px solid white;
+  background: rgba(0,0,0,0);
+  transition: all 0.3s 0.4s;
+
 }
 .new .newBox .txtBox del {
   font-size: 17px;
@@ -305,13 +319,22 @@ header {width: 100%;}
   height: 345px;
   color: white;
 }
+.new .newBox .new01:hover .line {
+  background: white;
+}
 .new .newBox .new02:hover .txtBox {
   height: 345px;
   color: white;
 }
+.new .newBox .new02:hover .line {
+  background: white;
+}
 .new .newBox .new03:hover .txtBox {
   height: 345px;
   color: white;
+}
+.new .newBox .new03:hover .line {
+  background: white;
 }
 
 
@@ -320,80 +343,523 @@ header {width: 100%;}
   width: 100%;
 }
 .recipe .recipe_bg {
-  width: 1900px;
+  width: 100%;
   height: 470px;
-  margin: 40px auto 0 auto;
-  background: url(../img/recipe_bg.jpg);
+  background: url(../img/recipe_bg.jpg) no-repeat center center/cover;
+}
+.recipe .recipe_bg h4 {
+  text-align: center;
+  padding: 70px 0 5px 0;
+  color: #555;
+}
+.recipe .recipe_bg h3 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+.recipe .recipe_bg h3 span {
+  font-weight: bold;
 }
 .recipe .recipeBox {
+  width: 1070px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.recipe .recipeBox .recipeLeft {
+  width: 530px;
+  height: 230px;
+  margin-right: 10px;
+  float: left;
+}
+.recipe .recipeBox .recipeLeft .recipe01_img {
+  width: 345px;
+  height: 230px;
+  float: left;
+  position: relative;
+}
+.recipe .recipeBox .recipeLeft .recipe01_txt {
+  width: 185px;
+  height: 230px;
+  float: left;
+}
+.recipe .recipeBox .recipeLeft .recipe01_img:hover .txtBox {
+  height: 230px;
+  color: white;
+}
+.recipe .recipeBox .recipeLeft .recipe01_img:hover .txtBox a {
+  color: white;
+  border: 1px solid white;
+}
+.recipe .recipeBox .txtBox {
+  width: 345px;
+  height: 0;
+  color: rgba(0,0,0,0);
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  transition: all 0.3s, color 0.3s 0.4s;
+}
+.recipe .recipeBox .txtBox p {
+  text-align: center;
+  margin-top: 70px;
+}
+.recipe .recipeBox .txtBox a {
+  display: block;
+  width: 100px;
+  color: rgba(0,0,0,0);
+  text-align: center;
+  border: 1px solid rgba(0,0,0,0);
+  border-radius: 10px;
+  margin: 10px auto 0 auto;
+  transition: color 0.3s 0.4s, border 0.3s 0.4s;
+}
+
+.recipe .recipeBox .recipeRight {
+  width: 530px;
+  height: 230px;
+  float: left;
+}
+.recipe .recipeBox .recipeRight .recipe02_img {
+  width: 345px;
+  height: 230px;
+  float: left;
+  position: relative;
+}
+.recipe .recipeBox .recipeRight .recipe02_txt {
+  width: 185px;
+  height: 230px;
+  float: left;
+}
+.recipe .recipeBox .recipeRight .recipe02_img:hover .txtBox {
+  height: 230px;
+  color: white;
+}
+.recipe .recipeBox .recipeRight .recipe02_img:hover .txtBox a {
+  color: white;
+  border: 1px solid white;
+}
+
+/************************* sns *************************/
+.sns {
+  width: 100%;
+  height: 400px;
+  background: #f2f2f2;
+}
+.sns h2 {
+  width: 1070px;
+  margin: 0 auto;
+  text-align: center;
+}
+.sns .snsBox {
+  width: 640px;
+  margin: 0 auto 40px auto;
+  overflow: hidden;
+}
+#rad01, #rad02, #rad03, #rad04, #rad05 {display: none;}
+.sns .snsBox label {
+  display: block;
+  width: 120px;
+  height: 26px;
+  font-size: 13px;
+  text-align: center;
+  margin-right: 10px;
+  border-bottom: 1px solid black;
+  float: left;
+}
+.sns .snsBox label:last-child {
+  margin: 0;
+}
+
+
+.sns .snsImg {
+  width: 520px;
+  height: 400px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.sns .snsImg p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #555;
+  text-align: center;
+  margin-top: 20px;
+}
+.sns .snsImg .twitter {
+  width: 160px;
+  height: 400px;
+  float: left;
+}
+.sns .snsImg .twitter .cheese {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.sns .snsImg .twitter .cheese img:first-child {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.sns .snsImg .twitter .cheese img:last-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.sns .snsImg .youtube {
+  width: 160px;
+  height: 400px;
+  margin: 0 20px;
+  float: left;
+}
+.sns .snsImg .youtube .soup {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.sns .snsImg .youtube .soup img:first-child {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.sns .snsImg .youtube .soup img:last-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.sns .snsImg .insta {
+  width: 160px;
+  height: 400px;
+  float: left;
+}
+.sns .snsImg .insta .instar {
+  width: 160px;
+  height: 160px;
+  position: relative;
+}
+.sns .snsImg .insta .instar img:first-child {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+}
+.sns .snsImg .insta .instar img:last-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/************************* footerTop *************************/
+footer{width: 100%;}
+
+.footerTop {width: 100%;height: 140px;}
+.footerTop .service {
   width: 1070px;
   margin: 30px auto;
   overflow: hidden;
 }
-.recipe .recipeBox p {
-  text-align: center;
-  padding: 20px 0 10px 0;
+.footerTop .service .left {
+  width: 35%;
+  float: left;
 }
-.recipe .recipeBox h3 {
+.footerTop .service .left .smLeft {
+  width: 50%;
+  float: left;
+}
+.footerTop .service .left .smLeft p:first-child {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+.footerTop .service .left .smLeft em {
   font-size: 30px;
-  font-weight: 100;
-  text-align: center;
-}
-.recipe .recipeBox h3 span {
   font-weight: bold;
+  color: rgb(64, 174, 218);
+}
+.footerTop .service .left .smLeft p:nth-child(3) {
+  font-size: 12px;
+}
+.footerTop .service .left .smLeft p:nth-child(4) {
+  font-size: 12px;
+}
+.footerTop .service .left .smRight {
+  width: 50%;
+  float: left;
 }
 
-.recipe .recipeLeft {
-  width: 530px;
-  height: 230px;
-  float: left;
-  margin-right: 10px;
-  position: relative;
-}
-.recipe .recipeLeft .recipe01 {
-  width: 345px;
-  height: 230px;
+
+.footerTop .service .middle {
+  width: 30%;
   float: left;
 }
-.recipe .recipeLeft .recipe01_txt {
-  width: 185px;
-  height: 230px;
+.footerTop .service .middle p {
+  color: #555;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.footerTop .service .middle .qrImg {
+  width: 25%;
   float: left;
 }
-.recipe .recipeLeft .txtBox {
-  width: 345px;
-  height: 230px;
+.footerTop .service .middle .qrImg img {
+
+  height: 70px;
+}
+.footerTop .service .middle .storeImg {
+  width: 75%;
+  height: 70px;
+  float: left;
+}
+.footerTop .service .middle .storeImg img:first-child {
+  width: 50%;
+  height: 50%;
+}
+.footerTop .service .middle .storeImg img:last-child {
+  width: 50%;
+  height: 50%;
+}
+
+
+.footerTop .service .right {
+  width: 35%;
+  float: left;
+}
+.footerTop .service .right .news {
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+.footerTop .service .right .news h3 {
+  float: left;
+  margin-right: 5px;
+}
+.footerTop .service .right .news a {
+  display: block;
+  width: 60px;
   text-align: center;
+  color: #555;
+  border: 1px solid #555;
+  float: left;
+}
+.footerTop .service .right li {
+  color: #555;
+  font-size: 14px;
+}
+
+/************************* footerMiddle *************************/
+.footerMiddle {width: 100%;background: #222;}
+.footerMiddle .company {
+  width: 1070px;
+  height: 50px;
+  
+  margin: 0 auto;
+  overflow: hidden;
+}
+.footerMiddle .company ul {
+  width: 800px;
+  float: left;
+}
+.footerMiddle .company li {
+  padding: 14px;
+  float: left;
+  font-size: 12px;
   color: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,0.5);
-
 }
-.recipe .recipeLeft .txtBox p {
-  margin-top: 70px;
+.footerMiddle .company li:hover {
+  color: blue;
 }
-.recipe .recipeLeft .txtBox a {
-  padding: 4px;
+.footerMiddle .right {
+  width: 270px;
+  height: 50px;
+  float: left;
   color: white;
-  border: 1px solid white;
-  border-radius: 30px;
+}
+.footerMiddle .right p {
+  float: left;
+  padding: 14px;
+  font-size: 12px;
+  border-left: 1px solid #ccc;
+}
+.footerMiddle .right p:last-child {
+  border-right: 1px solid #ccc;
+}
+
+/************************* footerBottom *************************/
+.footerBottom {width: 100%; height: 205px;background: #555;}
+.footerBottom .yakult {
+  width: 1070px;
+  height: 200px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.footerBottom .yakult h3 {
+  margin: 40px 0 10px 0;
+  color: #ccc;
+}
+.footerBottom .yakult .left {
+  width: 300px;
+  height: 200px;
+  font-size: 10px;
+  line-height: 18px;
+  float: left;
+}
+.footerBottom .yakult .left ul:first-child {
+  width: 80px;
+  float: left;
+  color: #ccc;
+}
+.footerBottom .yakult .left ul:last-child {
+  width: 170px;
+  float: left;
+  color: white;
+}
+.footerBottom .yakult .middle {
+  width: 350px;
+  font-size: 10px;
+  line-height: 18px;
+  float: left;
+}
+.footerBottom .yakult .middle ul:first-child  {
+  width: 110px;
+  float: left;
+  color: #ccc;
+}
+.footerBottom .yakult .middle ul:nth-child(2) {
+  width: 200px;
+  float: left;
+  color: white;
+}
+.footerBottom .yakult .middle ul:nth-child(2) a {
+  width: 40px;
+  border: 1px solid #ccc;
+  color: #ccc;
+  font-size: 10px;
+
+}
+.footerBottom .yakult .middle ul:nth-child(3)  {
+  width: 180px;
+  float: left;
+  color: #ccc;
+}
+.footerBottom .yakult .middle ul:nth-child(4)  {
+  width: 80px;
+  float: left;
+  color: white;
+}
+.footerBottom .yakult .middle p {
+  float: left;
 }
 
 
-.recipe .recipeRight {
-  width: 530px;
-  height: 230px;
+.footerBottom .yakult .right {
+  width: 350px;
+  font-size: 10px;
+  line-height: 18px;
   float: left;
 }
-.recipe .recipeRight .recipe02 {
-  width: 345px;
-  height: 230px;
+.footerBottom .yakult .right p:first-child {
+  float: left;
+  color: #ccc;
+}
+.footerBottom .yakult .right p:last-child {
+  float: left;
+  margin-top: 15px;
+  color: white;
+}
+.footerBottom .yakult .sgi_logo{
+  width: 150px;
+  height: 10px;
   float: left;
 }
-.recipe .recipeRight .recipe02_txt {
-  width: 185px;
-  height: 230px;
+.footerBottom .yakult .sgi_logo img {
+  width: 120px;
+  height: 20px;
   float: left;
+}
+
+
+
+/************************* footerBottom02 *************************/
+.footerBottom02 {
+  width: 100%;
+  background: #555;
+}
+.footerBottom02 .imgBox {
+  width: 1070px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #ccc;
+}
+.footerBottom02 .imgBox .left {
+  width: 200px;
+  font-size: 10px;
+  float: left;
+}
+.footerBottom02 .imgBox .ncsi_logo {
+  width: 180px;
+  float: left;
+  margin: 0px 20px;
+}
+.footerBottom02 .imgBox .ncsi_logo img {
+  width: 40px;
+  height: 25px;
+  float: left;
+}
+.footerBottom02 .imgBox .ncsi_logo p {
+  width: 135px;
+  float: left;
+  font-size: 10px;
+  margin-left: 5px;
+}
+.footerBottom02 .imgBox .ccm_logo {
+  width: 180px;
+  float: left;
+}
+.footerBottom02 .imgBox .ccm_logo img {
+  width: 40px;
+  height: 25px;
+  float: left;
+}
+.footerBottom02 .imgBox .ccm_logo p {
+  width: 135px;
+  float: left;
+  font-size: 10px;
+  margin-left: 5px;
+}
+.footerBottom02 .imgBox .snsBox {
+  float: right;
+}
+
+/************************* cart *************************/
+#cart {display: none;}
+#cart:checked ~ .cartBanner {right: 0;}
+#cart ~ .cartBanner {right: -300px;}
+
+.cartBanner {
+  overflow: hidden;
+  position: fixed;
+  top: 600px;
+  transition: all 0.3s;
+}
+.cartBanner label {
+  width: 59px;
+  height: 75px;
+  float: left;
+}
+.cartBanner .cartBox {
+  width: 300px;
+  height: 500px;
+  border: 1px solid black;
+  box-sizing: border-box;
+  float: left;
+  background: #ccc;
 }

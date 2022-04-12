@@ -9,7 +9,14 @@
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 </head>
 <body>
-  
+  <input type="checkbox" id="cart">
+  <div class="cartBanner">
+    <label for="cart"><img src="./img/cart.png" alt=""></label>
+    <div class="cartBox">
+      cartBox
+    </div>
+  </div>
+
   <header>
     <div class="inner">
       <nav class="gnb">
@@ -28,7 +35,7 @@
           <p>주문배송 가능지역</p>
         </div>
         <div class="logoImg">
-          <img src="./img/logo.jpg" alt="">
+          <a href="./index.html"><img src="./img/logo.jpg" alt=""></a>
         </div>
         <div class="search">
           <input type="text" placeholder="밀키트를 검색해보세요"><i class="xi-search"></i>
@@ -85,7 +92,7 @@
       <div class="proTop">
         <div class="pro01 pro">
           <div class="proImg">
-            <a href="#"><img src="./img/product01.jpg" alt=""></a>
+            <a href="./detail_page.html"><img src="./img/product01.jpg" alt=""></a>
           </div>
           <div class="txtBox">
             <p class="assistant">구매시 보쌈용 한돈 앞다리살 400g 을 추가 할수이</p>
@@ -206,27 +213,30 @@
 
   <seciton class="recipe">
     <div class="recipe_bg">
-      
+      <h4>야쿠르트 제품을 제대로 활용하는 비법</h4>
+      <h3>야쿠르트 <span>레시피</span></h3>
       <div class="recipeBox">
-        <p>야쿠르트 제품을 제대로 활용하는 비법</p>
-        <h3>야쿠르트<span>레시피</span></h3>
 
         <div class="recipeLeft">
-            <div class="recipe01">
-              <img src="./img/recipe01_img.jpg" alt="">
-            </div>
+          <div class="recipe01_img">
+            <img src="./img/recipe01_img.jpg" alt="">
             <div class="txtBox">
-              <p>맛있는 다이어트식단, 쉬림프 샐러드 파스타 만들기</p>
+              <p>맛있는 다이어트 식단, 쉬림프 샐러드 파스타 만들기</p>
               <a href="#">자세히보기</a>
             </div>
-            <div class="reprice01_txt">
-              <img src="./img/recipe01_txt.jpg" alt="">
-            </div>
-
+          </div>
+          <div class="recipe01_txt">
+            <img src="./img/recipe01_txt.jpg" alt="">
+          </div>
         </div>
+        
         <div class="recipeRight">
-          <div class="recipe02">
+          <div class="recipe02_img">
             <img src="./img/recipe02_img.jpg" alt="">
+            <div class="txtBox">
+              <p>걷바속촉 오트 크레놀라 쿠키 만들기</p>
+              <a href="#">자세히보기</a>
+            </div>
           </div>
           <div class="recipe02_txt">
             <img src="./img/recipe02_txt.jpg" alt="">
@@ -234,6 +244,183 @@
         </div>
       </div>
     </div>
-  </seciton>
+  </seciton><!--recipe-->
+
+
+
+  <input type="radio" id="rad01" name="rad">
+  <input type="radio" id="rad02" name="rad">
+  <input type="radio" id="rad03" name="rad">
+  <input type="radio" id="rad04" name="rad">
+  <input type="radio" id="rad05" name="rad">
+  
+  <section class="sns">
+    <h2>#야쿠르트</h2>
+    <div class="snsBox">
+
+      <label for="rad01">전체보기</label>
+      <label for="rad02">페이스북</label>
+      <label for="rad03">트위터</label>
+      <label for="rad04">유튜브</label>
+      <label for="rad05">인스타그램</label>
+
+    </div>
+    <div class="snsImg">
+      <div class="twitter">
+        <div class="cheese">
+          <img src="./img/cheese.jpg" alt="">
+          <img src="./img/twitter_icon.jpg" alt="">
+        </div>
+        <p>하이프레시에서만 만나볼 수있는<br>프랑스 국민 브랜드<br>프렞덩크림치즈!</p>
+      </div>
+      <div class="youtube">
+        <div class="soup">
+          <img src="./img/soup.jpg" alt="">
+          <img src="./img/youtube_icon.jpg" alt="">
+        </div>
+        <p>한국야쿠르트 영양있는 한끼,하루야채스프 출시!</p>
+      </div>
+      <div class="insta">
+        <div class="instar">
+          <img src="./img/instar.jpg" alt="">
+          <img src="./img/instar_icon.jpg" alt="">
+        </div>
+      </div>
+    </div>
+  </section><!--sns-->
+  
+
+
+  <footer>
+    <div class="footerTop">
+      <div class="service">
+        <div class="left">
+          <div class="smLeft">
+            <p>고객센터</p>
+            <em>1577-3651</em>
+            <p>평일 9시~18시</p>
+            <p>토요일 9시~12시(일/공휴일휴무)</p>
+          </div>
+          <div class="smRight">
+            <p>[FAQ]</p>
+            <p>자주찾는 질문</p>
+            <p>Fresh 매니저</p>
+            <p>위치 찾기</p>
+          </div>
+        </div>
+        <div class="middle">
+          <p>한국야쿠르트 어플리케이션</p>
+          <div class="qrImg">
+            <img src="./img/qr_code.jpg" alt="">
+          </div>
+          <div class="storeImg">
+            <img src="./img/google_play.png" alt="">
+            <img src="./img/app_store.png" alt="">
+          </div>
+        </div>
+        <div class="right">
+          <div class="news">
+            <h3>뉴스&공지사항</h3>
+            <a href="#">더보기</a>
+          </div>
+          <ul>
+            <li>[안내]11월 신용카드 무이자 할부안내</li>
+            <li>[안내]한국야쿠르트 이메일 청구서 서비스 종료 안내</li>
+            <li>[안내]10월 신용카드 무이자 할부 안내</li>
+          </ul>
+        </div>
+      </div>
+    </div> 
+    <div class="footerMiddle">
+      <div class="company">
+        <ul>
+          <li>회사소개</li>
+          <li>CCM</li>
+          <li>이용약관</li>
+          <li>개인정보처리방침</li>
+          <li>위치기반서비스 이용약관</li>
+          <li>야쿠르트 채용</li>
+          <li>Fresh매니저 모집</li>
+        </ul>
+        <div class="right">
+          <p>Family Site</p>
+          <p>메뉴 전체보기</p>
+        </div>
+      </div>
+    </div>
+    <div class="footerBottom">
+      <div class="yakult">
+        <h3>hy야쿠르트</h3>
+        <div class="left">
+          <ul>
+            <li>상호명</li>
+            <li>대표이사</li>
+            <li>주소</li>
+            <li>고객센터</li>
+            <li>이메일</li>
+          </ul>
+          <ul>
+            <li>(주)한국야쿠르트</li>
+            <li>김병진</li>
+            <li>서울특별시 서초구 강남대로 577</li>
+            <li>1577-3651</li>
+            <li>counsel@yakult.co.kr</li>
+          </ul>
+        </div>
+        <div class="middle">
+          <ul>
+            <li>사업자 등록번호</li>
+            <li>통신판매업신고번호</li>
+            <li>방문판매업신고번호</li>
+            <li>부가통신사업신고</li>
+          </ul>
+          <ul>
+            <li>114-81-70065</li>
+            <li>제2004-서울서초-04175 <a href="#">사업자정보확인</a></li>
+            <li>제2010-서울서초-0140호</li>
+            <li>02201</li>
+          </ul>
+          <ul>
+            <li>개인정보관리 및 청소년보호 책임자</li>
+          </ul>
+          <ul>
+            <li>최동일</li>
+          </ul>
+        </div>
+        <div class="right">
+          <p>소비자피해보상보험</p>
+          <div class="sgi_logo">
+            <img src="./img/sgi_logo.JPG" alt="">
+          </div>
+          <p>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰안에서 가입한 구매안전 서비스를 이용할 수 있도록</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footerBottom02">
+      <div class="imgBox">
+        <div class="left">
+          <p>Copyright (c) 2017 KOREA YAKULT CO.,LTD</p>
+          <p>All Rights Reserved</p>
+        </div>
+        <div class="ncsi_logo">
+          <img src="./img/ncsi_logo.JPG" alt="">
+          <p>국가고객만족도</p>
+          <p>21년 연속 1위(우유/발효유)</p>
+        </div>
+        <div class="ccm_logo">
+          <img src="./img/ccm_logo.JPG" alt="">
+          <p>소비자중심경영</p>
+          <p>(CCM)인증흭득</p>
+        </div>
+        <div class="snsBox">
+          <i class="xi-facebook"></i>
+          <i class="xi-twitter"></i>
+          <i class="xi-youtube"></i>
+          <i class="xi-github"></i>
+        </div>
+      </div>
+    </div>
+  </footer><!--footer-->
 </body>
 </html>

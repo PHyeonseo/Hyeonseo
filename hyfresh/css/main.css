@@ -847,7 +847,7 @@ footer{width: 100%;}
 .cartBanner {
   overflow: hidden;
   position: fixed;
-  top: 600px;
+  top: 300px;
   transition: all 0.3s;
 }
 .cartBanner label {

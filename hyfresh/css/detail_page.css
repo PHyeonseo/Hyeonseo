@@ -120,7 +120,7 @@ header {width: 100%;}
   height: 0px;
   position: absolute;
   top: 38px;
-  left: 0;
+  left: -1px;
   background: white;
   overflow: hidden;
   transition: all 0.3s;
@@ -204,10 +204,10 @@ header {width: 100%;}
 
 
 /************************* day *************************/
-.day {width: 100%;height: 500px;}
+.day {width: 100%;overflow: hidden;margin-bottom: 20px;}
 .day>p {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 .day .container {
   width: 1070px;
@@ -215,7 +215,7 @@ header {width: 100%;}
   margin: 0 auto;
   border-radius: 50px;
   background: #ccc;
-  position: relative;
+
 }
 .day .container .left {
   float: left;
@@ -244,19 +244,25 @@ header {width: 100%;}
   box-sizing: border-box;
 }
 .day .container .dayBox {
-  position: absolute;
-  top: -25px;
-  left: 222.5px;
+  float: left;
+  margin: -25px 0 0 172.5px;
 }
 .day .container .dayBox .date {
   width: 100px;
   height: 100px;
   text-align: center;
-  border: 1px solid black;
+  font-weight: bold;
+  color: #555;
+  background: white;
+  border: 1px solid #555;
   box-sizing: border-box;
   border-radius: 50%;
   margin-right: 5px;
   float: left;
+}
+.day .container .dayBox .date:hover {
+  color: green;
+  border: 1px solid green;
 }
 .day .container .dayBox .date:last-child {
   margin: 0;
@@ -268,6 +274,314 @@ header {width: 100%;}
 .day .container .dayBox .date p:last-child {
   font-size: 20px;
 }
+
+/************************* product *************************/
+.product {
+  width: 100%;
+}
+.product .container {
+  width: 1070px;
+  height: 1000px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.product .container .left {
+  width: 450px;
+  float: left;
+  margin-right: 80px;
+}
+.product .container .left .proImg {
+  width: 450px;
+  height: 450px;
+  margin-bottom: 5px;
+}
+.product .container .left .smart {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.product .container .left .smart .proImgSmall {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.product .container .left .smart .proImgSmall img{
+  width: 100%;
+  height: auto;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+.product .container .left .smart .chat {
+  width: 200px;
+  height: 100px;
+  float: right;
+  background: red;
+}
+.product .container .left .snsBox {
+  overflow: hidden;
+  height: 80px;
+  background: #f2f2f2;
+  margin-bottom: 20px;
+}
+.product .container .left .snsBox .sns {
+  float: left;
+  margin: 25px 0 20px 20px;
+} 
+.product .container .left .snsBox .sns i:first-child {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: white;
+  background: blue;
+  border-radius: 3px;
+  float: left;
+}
+.product .container .left .snsBox .sns i:nth-of-type(2) {
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  color: white;
+  margin: 0 5px;
+  background: rgb(64, 174, 218);
+  border-radius: 3px;
+  float: left;
+}
+.product .container .left .snsBox .sns p {
+  width: 80px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  background: rgb(64, 174, 218);
+  border-radius: 3px;
+  float: left;
+}
+
+.product .container .left .snsBox .like {
+  float: right;
+  margin: 25px 10px 0 0;
+}
+.product .container .left .snsBox .like p {
+  float: left;
+}
+.product .container .left .snsBox .like p:first-child {
+  width: 90px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: white;
+  color: #ccc;
+  margin-right: 5px;
+}
+.product .container .left .snsBox .like p:first-child i {
+  margin-right: 5px;
+}
+.product .container .left .snsBox .like p:last-child {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: white;
+  color: #ccc;
+}
+.product .container .left .snsBox .like p:last-child:hover {
+  color: skyblue;
+  border: 1px solid skyblue;
+}
+
+.product .container .left .event {
+  background: #f2f2f2;
+  height: 100px;
+}
+.product .container .left .event h3 {
+  padding: 20px 10px 0 20px;
+  font-size: 15px;
+}
+.product .container .left .event select {
+  width: 400px;
+  margin-left: 20px;
+} 
+
+
+.product .container .right {
+  width: 540px;
+  float: left;
+  border-top: 1px solid black;
+}
+.product .container .right .name {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.product .container .right .name p:nth-of-type(1) {
+  font-size: 13px;
+}
+.product .container .right .name p:nth-of-type(2) {
+  margin-top: 50px;
+  color: #ccc;
+}
+.product .container .right .name p:nth-of-type(3) {
+  font-size: 20px;
+  display: inline-block;
+} 
+.product .container .right .name p:nth-of-type(3) span {
+  font-size: 30px;
+}
+.product .container .right .name p:nth-of-type(4) {
+  display: inline-block;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  color: rgb(64, 174, 218);
+  background: white;
+  border-radius: 5px;
+  border: 1px solid rgb(64, 174, 218);
+}
+
+.product .container .right .delivery {
+  height: 80px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.product .container .right .delivery .delv {
+  margin: 15px 0 5px 15px;
+}
+.product .container .right .delivery .delv p {
+  display: inline-block;
+  font-size: 12px;
+  text-align: center;
+  color: #ccc;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.product .container .right .delivery .delv p:first-child {
+  width: 70px;
+}
+.product .container .right .delivery .delv p:last-child {
+  width: 60px;
+}
+.product .container .right .delivery .login {
+  font-size: 12px;
+  margin-left: 15px;
+}
+.product .container .right .delivery .login p {
+  display: inline-block;
+}
+.product .container .right .delivery .login p:first-child {
+  color: rgb(64, 174, 218);
+  margin-right: 170px;
+}
+.product .container .right .delivery .login p:last-child {
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background: rgb(64, 174, 218);
+  color: white;
+}
+
+.product .container .right .count {
+  overflow: hidden;
+  border: 5px solid #ccc;
+  margin-bottom: 15px;
+}
+.product .container .right .count .oneOrder {
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+.product .container .right .count .orderCount {
+  padding: 20px;
+  float: left;
+}
+.product .container .right .count .orderCount p:nth-of-type(1) {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.product .container .right.count .orderCount p:nth-of-type(2) {
+  font-weight: bold;
+  font-size: 18px;
+  color: rgb(64, 174, 218);
+}
+.product .container .right .count .countBox {
+  padding: 20px;
+  overflow: hidden;
+}
+.product .container .right .count .countBox p:nth-of-type(1),
+.product .container .right .count .countBox p:nth-of-type(2),
+.product .container .right .count .countBox p:nth-of-type(3) {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #ccc;
+  background-color: #f2f2f2;
+  float:left;
+  margin-top: 40px;
+}
+.product .container .right .count .countBox p:nth-of-type(2) {
+  background: white;
+}
+
+.priceBox {
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.priceBox .inner {
+  margin-left: 250px;
+}
+.priceBox .inner p {
+  float: left;
+}
+.priceBox .inner p:nth-of-type(1) {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 13px;
+}
+.priceBox .inner p:nth-of-type(2) {
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  background: orange;
+  color: black;
+  margin: 13px 20px 0 10px;
+}
+.priceBox .inner p:nth-of-type(3) {
+  font-size: 20px;
+  color: rgb(64, 174, 218);
+}
+.priceBox .inner p:nth-of-type(3) span {
+  font-size: 30px;
+}
+
+.Order {
+  overflow: hidden;
+}
+.Order p {
+  width: 265px;
+  height: 60px;
+  line-height: 60px;
+  font-weight: bold;
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.Order p:first-child {
+  margin-right: 10px;
+}
+.Order p:last-child {
+  background: rgb(64, 174, 218);
+}
+.Order p:last-child a {
+  color: white;
+}
+
+
 
 
 /************************* footerMiddle *************************/

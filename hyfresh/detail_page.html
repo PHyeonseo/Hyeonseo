@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hyfresh_ detail</title>
   <link rel="stylesheet" href="./css/detail_page.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
   <script src="https://kit.fontawesome.com/77d8c105f8.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -91,17 +91,16 @@
     </div>
   </div><!--list-->
   
+  
   <div class="day">
     <p>먼저 배송 받을 날을 선택해 주세요.</p>
     <div class="container">
       <div class="left">
         <p><i class="xi-angle-left"></i></p>
       </div>
-
       <div class="right">
         <p><i class="xi-angle-right"></i></p>
       </div>
-
       <div class="dayBox">
         <div class="day01 date">
           <p>금</p>
@@ -129,7 +128,8 @@
         </div>
       </div>
     </div>
-  </div>
+  </div><!--day-->
+
 
   <div class="product">
 
@@ -151,15 +151,14 @@
             <p>36</p>
           </div>
         </div>
-
         <div class="event">
           <h3>기획전&이벤트</h3>
           <select>
             <option value="eve">기획전/이벤트를 선탁하세요.</option>
           </select>
         </div>
-
-      </div>
+      </div><!--left-->
+      
       <div class="right">
         <div class="name">
           <p>구매시 보쌈용 한돈 앞다리살 400g을 추가로 드립니다.</p>
@@ -179,7 +178,6 @@
             <p>로그인</p>
           </div>
         </div>
-
         <div class="count">
           <div class="oneOrder">
             <input type="radio"><span>1회 주문</span>
@@ -194,7 +192,6 @@
             <p class="plus">-</p>
           </div>
         </div>
-
         <div class="priceBox">
           <div class="inner">
             <p>상품금액합계</p>
@@ -202,22 +199,70 @@
             <p><span>52,500</span>원</p>
           </div>
         </div>
-
         <div class="Order">
           <p><a href="#">장바구니</a></p>
           <p><a href="#">바로주문</a></p>
         </div>
-      </div>
+      </div><!--right-->
     </div>
 
   </div><!--product-->
 
+
+  <div class="together">
+    <div class="container">
+      <h3>이제품과함께하면 좋은제품</h3>
+    </div>
+  </div><!--together-->
   
-  
+
+  <div class="detail_page">
+    <input type="radio" name="rad" id ="rad01" checked> 
+    <input type="radio" name="rad" id ="rad02">
+    <input type="radio" name="rad" id ="rad03">
+    <input type="radio" name="rad" id ="rad04">
+    <div class="labelBox">
+      <label for="rad01">삼품설명</label>
+      <label for="rad02">상품후기(5건)</label>
+      <label for="rad03">상품문의(4건)</label>
+      <label for="rad04">배송안내</label>
+    </div>
+    <div class="description">
+      <div class="product_detail">
+        <img src="./detail_page/img/product_detail.jpg" alt="">
+      </div>
+      <div class="review">
+        <img src="./detail_page/img/review.jpg" alt="">
+      </div>
+      <div class="qna">
+        <img src="./detail_page/img/qna.jpg" alt="">
+      </div>
+      <div class="notice">
+        <img src="./detail_page/img/notice.jpg" alt="">
+      </div>
+    </div>
+    <div class="reviewAll">
+      <div class="review">
+        <img src="./detail_page/img/review.jpg" alt="">
+      </div>
+    </div>
+    <div class="qnaAll">
+      <div class="qna">
+        <img src="./detail_page/img/qna.jpg" alt="">
+      </div>
+    </div>
+    <div class="noticeAll">
+      <div class="notice">
+        <img src="./detail_page/img/notice.jpg" alt="">
+      </div>
+    </div>
+  </div><!--detail_page-->
 
 
 
   <footer>
+    <input type="checkbox" id="checkSite">
+
     <div class="footerMiddle">
       <div class="company">
         <ul>
@@ -230,14 +275,21 @@
           <li>Fresh매니저 모집</li>
         </ul>
         <div class="right">
-          <p>Family Site</p>
-          <p>메뉴 전체보기</p>
+          <p>Family Site ></p>
+          <p><label for="checkSite">메뉴 전체보기 ></label></p>
+        </div>
+        <div class="siteMap">
+          siteMap
         </div>
       </div>
-    </div>
+    </div><!--footerMiddle-->
+
+
     <div class="footerBottom">
       <div class="yakult">
-        <h3>hy야쿠르트</h3>
+        <div class="hy_logo">
+          <img src="./img/hy_logo.jpg" alt="">
+        </div>
         <div class="left">
           <ul>
             <li>상호명</li>
@@ -263,7 +315,8 @@
           </ul>
           <ul>
             <li>114-81-70065</li>
-            <li>제2004-서울서초-04175 <a href="#">사업자정보확인</a></li>
+            <li>제2004-서울서초-04175</li>
+            <li><a href="#">사업자정보확인 ></a></li>
             <li>제2010-서울서초-0140호</li>
             <li>02201</li>
           </ul>
@@ -277,12 +330,15 @@
         <div class="right">
           <p>소비자피해보상보험</p>
           <div class="sgi_logo">
-            <img src="./img/sgi_logo.JPG" alt="">
+            <img src="./img/sgi_logo02.JPG" alt="">
           </div>
-          <p>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰안에서 가입한 구매안전 서비스를 이용할 수 있도록</p>
+          <p>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰안에서 가입한 구매안전 서비스를 이용하실 수 있습니다.</p>
+          <p>(보상대상:미배송,반품/환불거부,쇼핑몰부도)</p>
+          <p><a href="#">가입사실확인 ></a></p>
         </div>
       </div>
-    </div>
+    </div><!--footerBottom-->
+
 
     <div class="footerBottom02">
       <div class="imgBox">
@@ -307,7 +363,7 @@
           <i class="xi-github"></i>
         </div>
       </div>
-    </div>
-  </footer>
+    </div><!--footerBottom02-->
+  </footer><!--footer-->
 </body>
 </html>

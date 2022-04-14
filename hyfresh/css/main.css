@@ -445,13 +445,17 @@ header {width: 100%;}
 /************************* sns *************************/
 .sns {
   width: 100%;
-  height: 400px;
+  height: 450px;
   background: #f2f2f2;
 }
-.sns h2 {
-  width: 1070px;
+.sns .yakurtImg {
+  width: 200px;
+  height: 100px;
   margin: 0 auto;
-  text-align: center;
+}
+.sns .yakurtImg img {
+  width: 100%;
+  height: auto;
 }
 .sns .snsBox {
   width: 640px;
@@ -568,131 +572,219 @@ footer{width: 100%;}
   overflow: hidden;
 }
 .footerTop .service .left {
-  width: 35%;
+  width: 400px;
   float: left;
 }
 .footerTop .service .left .smLeft {
-  width: 50%;
+  width: 200px;
+  font-weight: bold;
   float: left;
 }
-.footerTop .service .left .smLeft p:first-child {
-  font-size: 18px;
-  margin-bottom: 5px;
+.footerTop .service .left .smLeft p:nth-of-type(1) {
+  font-size: 17px;
+  margin-bottom: 10px;
 }
 .footerTop .service .left .smLeft em {
-  font-size: 30px;
-  font-weight: bold;
+  display: block;
+  font-size: 25px;
   color: rgb(64, 174, 218);
+  margin-bottom: 5px;
 }
-.footerTop .service .left .smLeft p:nth-child(3) {
-  font-size: 12px;
+.footerTop .service .left .smLeft p:nth-of-type(2) {
+  font-size: 3px;
 }
-.footerTop .service .left .smLeft p:nth-child(4) {
-  font-size: 12px;
+.footerTop .service .left .smLeft p:nth-of-type(2) span {
+  display: inline-block;
+  margin-right: 13px;
+  color: #555;
 }
+.footerTop .service .left .smLeft p:nth-of-type(3) {
+  font-size: 3px;
+}
+.footerTop .service .left .smLeft p:nth-of-type(3) span {
+  display: inline-block;
+  margin-right: 3px;
+  color: #555;
+}
+
 .footerTop .service .left .smRight {
-  width: 50%;
+  width: 200px;
   float: left;
+  border-left: 1px solid #ccc;
+  box-sizing: border-box;
 }
+.footerTop .service .left .smRight p {
+  font-size: 13px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+.footerTop .service .left .smRight p:nth-child(1) {
+  color: #555;
+  margin-top: 20px;
+}
+.footerTop .service .left .smRight p:nth-child(3) {
+  color: #555;
+  margin-top: 10px;
+}
+
+
 
 
 .footerTop .service .middle {
-  width: 30%;
+  width: 320px;
+  overflow: hidden;
   float: left;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+  /* background-color: #ccc; */
 }
 .footerTop .service .middle p {
-  color: #555;
+  font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-left: 50px;
 }
 .footerTop .service .middle .qrImg {
-  width: 25%;
+  width: 70px;
+  height: 70px;
+  margin-right: 13px;
+  margin-left: 50px;
   float: left;
 }
 .footerTop .service .middle .qrImg img {
-
-  height: 70px;
+  width: 100%;
+  height: auto;
 }
 .footerTop .service .middle .storeImg {
-  width: 75%;
+  width: 100px;
   height: 70px;
   float: left;
 }
-.footerTop .service .middle .storeImg img:first-child {
-  width: 50%;
-  height: 50%;
+.footerTop .service .middle .storeImg .googleImg {
+  width: 100px;
+  height: 35px;
 }
-.footerTop .service .middle .storeImg img:last-child {
-  width: 50%;
-  height: 50%;
+.footerTop .service .middle .storeImg .googleImg img {
+  width: 100%;
+  height: auto;
+}
+.footerTop .service .middle .storeImg .appImg {
+  width: 100px;
+  height: 35px;
+}
+.footerTop .service .middle .storeImg .appImg img {
+  width: 100%;
+  height: auto;
 }
 
 
 .footerTop .service .right {
-  width: 35%;
+  width: 350px;
   float: left;
+  /* background: #ccc; */
 }
 .footerTop .service .right .news {
-  overflow: hidden;
+  color: #555;
+  /* background: red; */
   margin-bottom: 10px;
+  margin-left: 25px;
+  overflow: hidden;
 }
 .footerTop .service .right .news h3 {
   float: left;
+  font-size: 14px;
   margin-right: 5px;
 }
-.footerTop .service .right .news a {
-  display: block;
-  width: 60px;
+.footerTop .service .right .news p {
+  width: 48px;
+  height: 18px;
   text-align: center;
-  color: #555;
   border: 1px solid #555;
   float: left;
 }
-.footerTop .service .right li {
+.footerTop .service .right .news p a {
+  line-height: 20px;
+  display: block;
+  font-size: 10px;
   color: #555;
-  font-size: 14px;
 }
+.footerTop .service .right ul {
+  font-size: 12px;
+  font-weight: bold;
+  color: #ccc;
+  margin-left: 25px;
+}
+.footerTop .service .right ul li:nth-child(2) {
+  margin: 5px 0;
+}
+
 
 /************************* footerMiddle *************************/
 .footerMiddle {width: 100%;background: #222;}
+#checkSite {display: none;}
+#checkSite:checked ~ .footerMiddle .siteMap {height: 200px;}
+
 .footerMiddle .company {
   width: 1070px;
-  height: 50px;
-  
+  height: 46px;
   margin: 0 auto;
-  overflow: hidden;
+  position: relative;
 }
 .footerMiddle .company ul {
-  width: 800px;
+  width: 720px;
   float: left;
 }
 .footerMiddle .company li {
-  padding: 14px;
-  float: left;
+  padding: 15px 0;
+  margin-right: 25px;
   font-size: 12px;
   color: white;
+  float: left;
+}
+.footerMiddle .company li:last-child {
+  margin-right: 0;
 }
 .footerMiddle .company li:hover {
   color: blue;
 }
 .footerMiddle .right {
-  width: 270px;
-  height: 50px;
-  float: left;
+  width: 350px;
   color: white;
+  float: right;
 }
 .footerMiddle .right p {
-  float: left;
-  padding: 14px;
+  width: 175px;
+  padding: 15px 0;
+  text-align: center;
   font-size: 12px;
   border-left: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
 }
 .footerMiddle .right p:last-child {
   border-right: 1px solid #ccc;
+  position: relative;
+}
+.footerMiddle .company .siteMap {
+  width: 1070px;
+  height: 0;
+  margin: 0 auto;
+  line-height: 200px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  background: #555;
+  position: absolute;
+  top: -200px;
+  left: 0;
+  transition: all 0.3s;
+  overflow: hidden;
 }
 
+
 /************************* footerBottom *************************/
-.footerBottom {width: 100%; height: 205px;background: #555;}
+.footerBottom {width: 100%;background: #444;}
 .footerBottom .yakult {
   width: 1070px;
   height: 200px;
@@ -701,14 +793,21 @@ footer{width: 100%;}
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
 }
-.footerBottom .yakult h3 {
+.footerBottom .yakult .hy_logo {
+  width: 100px;
+  height: 30px;
   margin: 40px 0 10px 0;
-  color: #ccc;
+  font-size: 8px;
+}
+.footerBottom .yakult .hy_logo img {
+  width: 100%;
+  height: auto;
 }
 .footerBottom .yakult .left {
   width: 300px;
   height: 200px;
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: bold;
   line-height: 18px;
   float: left;
 }
@@ -722,19 +821,22 @@ footer{width: 100%;}
   float: left;
   color: white;
 }
+
+
 .footerBottom .yakult .middle {
   width: 350px;
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: bold;
   line-height: 18px;
   float: left;
 }
-.footerBottom .yakult .middle ul:first-child  {
+.footerBottom .yakult .middle ul:nth-child(1)  {
   width: 110px;
   float: left;
   color: #ccc;
 }
 .footerBottom .yakult .middle ul:nth-child(2) {
-  width: 200px;
+  width: 240px;
   float: left;
   color: white;
 }
@@ -743,71 +845,90 @@ footer{width: 100%;}
   border: 1px solid #ccc;
   color: #ccc;
   font-size: 10px;
-
+}
+.footerBottom .yakult .middle ul:nth-child(2) li:nth-child(2) {
+  float: left;
+  margin-right: 10px;
 }
 .footerBottom .yakult .middle ul:nth-child(3)  {
   width: 180px;
   float: left;
   color: #ccc;
+  margin-right: 15px;
 }
 .footerBottom .yakult .middle ul:nth-child(4)  {
   width: 80px;
   float: left;
   color: white;
 }
-.footerBottom .yakult .middle p {
-  float: left;
-}
 
 
 .footerBottom .yakult .right {
   width: 350px;
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: bold;
   line-height: 18px;
+  /* overflow: hidden; */
   float: left;
 }
-.footerBottom .yakult .right p:first-child {
-  float: left;
+.footerBottom .yakult .right p:nth-of-type(1) {
   color: #ccc;
-}
-.footerBottom .yakult .right p:last-child {
-  float: left;
-  margin-top: 15px;
-  color: white;
-}
-.footerBottom .yakult .sgi_logo{
-  width: 150px;
-  height: 10px;
+  margin-bottom: 5px;
+  margin-right: 10px;
   float: left;
 }
-.footerBottom .yakult .sgi_logo img {
-  width: 120px;
+.footerBottom .yakult .right .sgi_logo {
+  width: 100px;
   height: 20px;
   float: left;
 }
-
+.footerBottom .yakult .right .sgi_logo img {
+  width: 100%;
+  height: auto;
+}
+.footerBottom .yakult .right p:nth-of-type(2) {
+  color: #ccc;
+  float: left;
+}
+.footerBottom .yakult .right p:nth-of-type(3) {
+  color: #ccc;
+  margin-right: 10px;
+  float: left;
+}
+.footerBottom .yakult .right p:nth-of-type(4) {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
+}
+.footerBottom .yakult .right p:nth-of-type(4) a {
+  font-size: 8px;
+  color: #ccc;
+}
 
 
 /************************* footerBottom02 *************************/
 .footerBottom02 {
   width: 100%;
-  background: #555;
+  height: 70px;
+  background: #444;
 }
 .footerBottom02 .imgBox {
   width: 1070px;
   margin: 0 auto;
   overflow: hidden;
   color: #ccc;
+  /* background: red; */
 }
 .footerBottom02 .imgBox .left {
   width: 200px;
   font-size: 10px;
+  margin-top: 15px;
   float: left;
 }
 .footerBottom02 .imgBox .ncsi_logo {
   width: 180px;
   float: left;
-  margin: 0px 20px;
+  margin: 15px 20px;
 }
 .footerBottom02 .imgBox .ncsi_logo img {
   width: 40px;
@@ -822,6 +943,7 @@ footer{width: 100%;}
 }
 .footerBottom02 .imgBox .ccm_logo {
   width: 180px;
+  margin-top: 15px;
   float: left;
 }
 .footerBottom02 .imgBox .ccm_logo img {
@@ -836,6 +958,8 @@ footer{width: 100%;}
   margin-left: 5px;
 }
 .footerBottom02 .imgBox .snsBox {
+  margin-top: 15px;
+  font-size: 25px;
   float: right;
 }
 

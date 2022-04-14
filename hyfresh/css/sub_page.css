@@ -398,46 +398,71 @@ header {width: 100%;}
 }
 
 
-
 /************************* footerMiddle *************************/
 .footerMiddle {width: 100%;background: #222;}
+#checkSite {display: none;}
+#checkSite:checked ~ .footerMiddle .siteMap {height: 200px;}
+
 .footerMiddle .company {
   width: 1070px;
-  height: 50px;
+  height: 46px;
   margin: 0 auto;
-  overflow: hidden;
+  position: relative;
 }
 .footerMiddle .company ul {
-  width: 800px;
+  width: 720px;
   float: left;
 }
 .footerMiddle .company li {
-  padding: 14px;
-  float: left;
+  padding: 15px 0;
+  margin-right: 25px;
   font-size: 12px;
   color: white;
+  float: left;
+}
+.footerMiddle .company li:last-child {
+  margin-right: 0;
 }
 .footerMiddle .company li:hover {
   color: blue;
 }
 .footerMiddle .right {
-  width: 270px;
-  height: 50px;
-  float: left;
+  width: 350px;
   color: white;
+  float: right;
 }
 .footerMiddle .right p {
-  float: left;
-  padding: 14px;
+  width: 175px;
+  padding: 15px 0;
+  text-align: center;
   font-size: 12px;
   border-left: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
 }
 .footerMiddle .right p:last-child {
   border-right: 1px solid #ccc;
+  position: relative;
+}
+.footerMiddle .company .siteMap {
+  width: 1070px;
+  height: 0;
+  margin: 0 auto;
+  line-height: 200px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  background: #555;
+  position: absolute;
+  top: -200px;
+  left: 0;
+  transition: all 0.3s;
+  overflow: hidden;
 }
 
+
 /************************* footerBottom *************************/
-.footerBottom {width: 100%; height: 205px;background: #555;}
+.footerBottom {width: 100%;background: #444;}
 .footerBottom .yakult {
   width: 1070px;
   height: 200px;
@@ -446,14 +471,21 @@ header {width: 100%;}
   border-bottom: 1px solid #ccc;
   box-sizing: border-box;
 }
-.footerBottom .yakult h3 {
+.footerBottom .yakult .hy_logo {
+  width: 100px;
+  height: 30px;
   margin: 40px 0 10px 0;
-  color: #ccc;
+  font-size: 8px;
+}
+.footerBottom .yakult .hy_logo img {
+  width: 100%;
+  height: auto;
 }
 .footerBottom .yakult .left {
   width: 300px;
   height: 200px;
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: bold;
   line-height: 18px;
   float: left;
 }
@@ -467,19 +499,22 @@ header {width: 100%;}
   float: left;
   color: white;
 }
+
+
 .footerBottom .yakult .middle {
   width: 350px;
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: bold;
   line-height: 18px;
   float: left;
 }
-.footerBottom .yakult .middle ul:first-child  {
+.footerBottom .yakult .middle ul:nth-child(1)  {
   width: 110px;
   float: left;
   color: #ccc;
 }
 .footerBottom .yakult .middle ul:nth-child(2) {
-  width: 200px;
+  width: 240px;
   float: left;
   color: white;
 }
@@ -488,71 +523,90 @@ header {width: 100%;}
   border: 1px solid #ccc;
   color: #ccc;
   font-size: 10px;
-
+}
+.footerBottom .yakult .middle ul:nth-child(2) li:nth-child(2) {
+  float: left;
+  margin-right: 10px;
 }
 .footerBottom .yakult .middle ul:nth-child(3)  {
   width: 180px;
   float: left;
   color: #ccc;
+  margin-right: 15px;
 }
 .footerBottom .yakult .middle ul:nth-child(4)  {
   width: 80px;
   float: left;
   color: white;
 }
-.footerBottom .yakult .middle p {
-  float: left;
-}
 
 
 .footerBottom .yakult .right {
   width: 350px;
-  font-size: 10px;
+  font-size: 11px;
+  font-weight: bold;
   line-height: 18px;
+  /* overflow: hidden; */
   float: left;
 }
-.footerBottom .yakult .right p:first-child {
-  float: left;
+.footerBottom .yakult .right p:nth-of-type(1) {
   color: #ccc;
-}
-.footerBottom .yakult .right p:last-child {
-  float: left;
-  margin-top: 15px;
-  color: white;
-}
-.footerBottom .yakult .sgi_logo{
-  width: 150px;
-  height: 10px;
+  margin-bottom: 5px;
+  margin-right: 10px;
   float: left;
 }
-.footerBottom .yakult .sgi_logo img {
-  width: 120px;
+.footerBottom .yakult .right .sgi_logo {
+  width: 100px;
   height: 20px;
   float: left;
 }
-
+.footerBottom .yakult .right .sgi_logo img {
+  width: 100%;
+  height: auto;
+}
+.footerBottom .yakult .right p:nth-of-type(2) {
+  color: #ccc;
+  float: left;
+}
+.footerBottom .yakult .right p:nth-of-type(3) {
+  color: #ccc;
+  margin-right: 10px;
+  float: left;
+}
+.footerBottom .yakult .right p:nth-of-type(4) {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
+}
+.footerBottom .yakult .right p:nth-of-type(4) a {
+  font-size: 8px;
+  color: #ccc;
+}
 
 
 /************************* footerBottom02 *************************/
 .footerBottom02 {
   width: 100%;
-  background: #555;
+  height: 70px;
+  background: #444;
 }
 .footerBottom02 .imgBox {
   width: 1070px;
   margin: 0 auto;
   overflow: hidden;
   color: #ccc;
+  /* background: red; */
 }
 .footerBottom02 .imgBox .left {
   width: 200px;
   font-size: 10px;
+  margin-top: 15px;
   float: left;
 }
 .footerBottom02 .imgBox .ncsi_logo {
   width: 180px;
   float: left;
-  margin: 0px 20px;
+  margin: 15px 20px;
 }
 .footerBottom02 .imgBox .ncsi_logo img {
   width: 40px;
@@ -567,6 +621,7 @@ header {width: 100%;}
 }
 .footerBottom02 .imgBox .ccm_logo {
   width: 180px;
+  margin-top: 15px;
   float: left;
 }
 .footerBottom02 .imgBox .ccm_logo img {
@@ -581,8 +636,11 @@ header {width: 100%;}
   margin-left: 5px;
 }
 .footerBottom02 .imgBox .snsBox {
+  margin-top: 15px;
+  font-size: 25px;
   float: right;
 }
+
 
 /************************* cart *************************/
 #cart {display: none;}

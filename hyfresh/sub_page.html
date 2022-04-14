@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hyfresh_ sub</title>
   <link rel="stylesheet" href="./css/sub_page.css">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
 </head>
 <body>
 
@@ -111,11 +111,12 @@
       </div>
     </div><!--proBox-->
 
+    
     <div class="producutShop">
       <div class="proTop">
         <div class="pro01 pro">
           <div class="proImg">
-            <a href="./detail_page.html"><img src="./sub_page/img/product_01.jpg" alt=""></a>
+            <a href="./detail_page.html" target="blank"><img src="./sub_page/img/product_01.jpg" alt=""></a>
           </div>
           <div class="txtBox">
             <div class="delivery">
@@ -152,8 +153,7 @@
             <p class="price"><del>62,100원</del>52,500<span>원(회원가)</span></p>
           </div>
         </div>
-      </div><!--Top-->
-
+      </div><!--proTop-->
 
       <div class="proMiddle">
         <div class="pro01 pro">
@@ -196,7 +196,7 @@
             <p class="price"><del>62,100원</del>52,500<span>원(회원가)</span></p>
           </div>
         </div>
-      </div><!--Middle-->
+      </div><!--proMiddle-->
 
       <div class="proBottom">
         <div class="pro01 pro">
@@ -239,9 +239,10 @@
             <p class="price"><del>62,100원</del>52,500<span>원(회원가)</span></p>
           </div>
         </div>
-      </div><!--Bottom-->
+      </div><!--proBottom-->
     </div>
   </section><!--producutShop-->
+
 
   <div class="number">
     <div class="pageNumber">
@@ -263,6 +264,7 @@
 
 
   <footer>
+    <input type="checkbox" id="checkSite">
     <div class="footerMiddle">
       <div class="company">
         <ul>
@@ -275,14 +277,20 @@
           <li>Fresh매니저 모집</li>
         </ul>
         <div class="right">
-          <p>Family Site</p>
-          <p>메뉴 전체보기</p>
+          <p>Family Site ></p>
+          <p><label for="checkSite">메뉴 전체보기 ></label></p>
+        </div>
+        <div class="siteMap">
+          siteMap
         </div>
       </div>
-    </div>
+    </div><!--footerMiddle-->
+
     <div class="footerBottom">
       <div class="yakult">
-        <h3>hy야쿠르트</h3>
+        <div class="hy_logo">
+          <img src="./img/hy_logo.jpg" alt="">
+        </div>
         <div class="left">
           <ul>
             <li>상호명</li>
@@ -308,7 +316,8 @@
           </ul>
           <ul>
             <li>114-81-70065</li>
-            <li>제2004-서울서초-04175 <a href="#">사업자정보확인</a></li>
+            <li>제2004-서울서초-04175</li>
+            <li><a href="#">사업자정보확인 ></a></li>
             <li>제2010-서울서초-0140호</li>
             <li>02201</li>
           </ul>
@@ -322,29 +331,36 @@
         <div class="right">
           <p>소비자피해보상보험</p>
           <div class="sgi_logo">
-            <img src="./img/sgi_logo.JPG" alt="">
+            <img src="./img/sgi_logo02.jpg" alt="">
           </div>
-          <p>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰안에서 가입한 구매안전 서비스를 이용할 수 있도록</p>
+          <p>고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰안에서 가입한 구매안전 서비스를 이용하실 수 있습니다.</p>
+          <p>(보상대상:미배송,반품/환불거부,쇼핑몰부도)</p>
+          <p><a href="#">가입사실확인 ></a></p>
         </div>
       </div>
-    </div>
+    </div><!--footerBottom-->
+
 
     <div class="footerBottom02">
       <div class="imgBox">
+
         <div class="left">
           <p>Copyright (c) 2017 KOREA YAKULT CO.,LTD</p>
           <p>All Rights Reserved</p>
         </div>
+
         <div class="ncsi_logo">
           <img src="./img/ncsi_logo.JPG" alt="">
           <p>국가고객만족도</p>
           <p>21년 연속 1위(우유/발효유)</p>
         </div>
+
         <div class="ccm_logo">
           <img src="./img/ccm_logo.JPG" alt="">
           <p>소비자중심경영</p>
           <p>(CCM)인증흭득</p>
         </div>
+
         <div class="snsBox">
           <i class="xi-facebook"></i>
           <i class="xi-twitter"></i>
@@ -352,7 +368,8 @@
           <i class="xi-github"></i>
         </div>
       </div>
-    </div>
-  </footer>
+    </div><!--footerBottom02-->
+
+  </footer><!--footer-->
 </body>
 </html>

@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ottugi</title>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+  <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="wrap">
+
+    <header class="header"> 
+      <div class="logo"> 
+        <a href="#"><img src="../img/logo.png" alt=""></a>
+      </div> 
+
+      <input type="checkbox" id="chec01">
+      <label for="chec01" class="open"><i class="xi-bars"></i></label>
+      <label for="chec01" class="close"><i class="xi-close"></i></label>
+
+      <div class="btn_page">
+        <section class="login">
+          <p>고객님은 현재 로그아웃 상태입니다.</p>
+          <div class="join">
+            <p>로그인</p>
+            <p>회원가입</p>
+          </div>
+        </section>
+
+        <section class="intro">
+          <div class="cart" >
+            <a href="#">
+              <i class="xi-cart-o"></i>
+              <div class="txt">장바구니</div>
+            </a>
+          </div>
+          <div class="my">
+            <a href="#">
+              <i class="xi-user-o"></i>
+              <div class="txt">마이페이지</div>
+            </a>
+          </div>
+          <div class="introduce">
+            <a href="#">
+              <i class="xi-city"></i>
+              <div class="txt">회사소개</div>
+            </a>
+          </div>
+        </section>
+
+        <section class="cate">
+          <h4>제품카테고리</h4>
+          <div class="top">
+            <div class="min">
+              <a href="#">
+                <figure><img src="../img/cate_3min_170.jpg" alt=""></figure>
+                <div class="txt">3분/간편식</div>
+              </a>
+            </div>
+            <div class="rice">
+              <a href="#">
+                <figure><img src="../img/cate_rice_170.jpg" alt=""></figure>
+                <div class="txt">밥</div>
+              </a>
+            </div>
+          </div>
+          <div class="bottom">
+            <div class="ramen">
+              <a href="#">
+                <figure><img src="../img/cate_ramen_170.jpg" alt=""></figure>
+                <div class="txt">라면</div>
+              </a>
+            </div>
+            <div class="desert">
+              <a href="#">
+                <figure><img src="../img/cate_desert_170.jpg" alt=""></figure>
+                <div class="txt">디저트</div>
+              </a>
+            </div>
+          </div>
+        </section>
+
+      </div><!-- btn_page -->
+
+
+    </header><!--header-->
+
+
+    <div class="main_visual">
+      <figure><img src="../img/main_visual01_200.jpg" alt=""></figure>
+    </div><!--main_visual-->
+
+
+    <section class="product_intro">
+      <h4>오뚜기 상품소개</h4>
+      <p class="line"></p>
+      <p class="greet">다양한 제품을 한곳에서 즐기세요!</p>
+
+      <input type="radio" name="pro" id="rad_min" checked>
+      <input type="radio" name="pro" id="rad_rice">
+      <input type="radio" name="pro" id="rad_ramen">
+      <input type="radio" name="pro" id="rad_desert">
+
+      <div class="icon_label">
+        <label for="rad_min">
+          <div class="icon_box min_b">
+            <span class="material-symbols-outlined">timer_3_alt_1</span>
+          </div>
+        </label>
+        <label for="rad_rice">
+          <div class="icon_box rice_b">
+            <span class="material-symbols-outlined">rice_bowl</span>
+          </div>
+        </label>
+        <label for="rad_ramen">
+          <div class="icon_box ramen_b">
+            <span class="material-symbols-outlined">ramen_dining</span>
+          </div>
+        </label>
+        <label for="rad_desert">
+          <div class="icon_box desert_b">
+            <span class="material-symbols-outlined">icecream</span>
+          </div>
+        </label>
+      </div><!--icon_label-->
+
+      <div class="min_box">
+
+        <input type="radio" id="Fbox" name="mbox" checked>
+        <input type="radio" id="Sbox" name="mbox">
+
+        
+        <div class="first_min">
+          <div class="food mtball">
+            <a href="#">
+              <figure><img src="../img/min01.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">3분 미트볼 150g</div>
+            <div class="pro_price">2,380원</div>
+          </div>
+          <div class="food hmbug">
+            <a href="#">
+              <figure><img src="../img/min02.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">3분 햄버그스테이크 140g</div>
+            <div class="pro_price">2,380원</div>
+          </div>
+          <div class="food deri">
+            <a href="#">
+              <figure><img src="../img/min03.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">3분 데리야끼 치킨 150g</div>
+            <div class="pro_price">2,380원</div>
+          </div>
+        </div>
+
+        <div class="second_min">
+          <div class="food mtball">
+            <a href="#">
+              <figure><img src="../img/min04.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">3분 스위트칠리치킨 150g</div>
+            <div class="pro_price">2,380원</div>
+          </div>
+          <div class="food hmbug">
+            <a href="#">
+              <figure><img src="../img/min05.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">3분 바베큐치킨 140g</div>
+            <div class="pro_price">2,380원</div>
+          </div>
+          <div class="food deri">
+            <a href="#">
+              <figure><img src="../img/min06.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">3분 탕수완자 150g</div>
+            <div class="pro_price">2,380원</div>
+          </div>
+        </div>
+
+        <div class="label_num">
+          <label for="Fbox" class="num num01"></label>
+          <label for="Sbox" class="num num02"></label>
+        </div>
+  
+        
+      </div><!--min_box-->
+
+      <div class="rice_box">
+
+        <div class="first_rice">
+          <div class="food nomal">
+            <a href="#">
+              <figure><img src="../img/rice01.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">맛있는 오뚜기밥 210G</div>
+            <div class="pro_price">1,280원</div>
+          </div>
+          <div class="food hyeon">
+            <a href="#">
+              <figure><img src="../img/rice02.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">오뚜기밥 발아현미 210g</div>
+            <div class="pro_price">1,480원</div>
+          </div>
+          <div class="food gosi">
+            <a href="#">
+              <figure><img src="../img/rice03.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">오뚜기밥 고시히카리 210g</div>
+            <div class="pro_price">1,480원</div>
+          </div>
+        </div>
+        
+      </div><!--rice_box-->
+
+      <div class="ramen_box">
+
+        <div class="first_ramen">
+          <div class="food nomal">
+            <a href="#">
+              <figure><img src="../img/ramen01.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">열라짬뽕 (130g x 4)</div>
+            <div class="pro_price">4,980원</div>
+          </div>
+          <div class="food hyeon">
+            <a href="#">
+              <figure><img src="../img/ramen02.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">열려라 참깨라면 (115g x 4)</div>
+            <div class="pro_price">3,480원</div>
+          </div>
+          <div class="food gosi">
+            <a href="#">
+              <figure><img src="../img/ramen03.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">오동통면 (120g x 4)</div> 
+            <div class="pro_price">2,800원</div>
+          </div>
+        </div>
+
+      </div><!--ramen_box-->
+
+      <div class="desert_box">
+
+        <div class="first_desert">
+          <div class="food nomal">
+            <a href="#">
+              <figure><img src="../img/desert01.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">스위트앤젤 파인 90g</div>
+            <div class="pro_price">780원</div>
+          </div>
+          <div class="food hyeon">
+            <a href="#">
+              <figure><img src="../img/desert02.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">스위트앤젤 밀감 90g</div>
+            <div class="pro_price">780원</div>
+          </div>
+          <div class="food gosi">
+            <a href="#">
+              <figure><img src="../img/desert03.jpg" alt=""></figure>
+            </a>
+            <div class="pro_name">스위트앤젤 복숭아 90g</div>
+            <div class="pro_price">780원</div>
+          </div>
+        </div>
+
+      </div><!--desert_box-->
+
+    </section><!--product_intro-->
+
+    <section class="product_popular">
+      
+    </section>
+
+
+
+
+  </div>
+
+</body>
+</html>

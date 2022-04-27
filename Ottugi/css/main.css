@@ -1,0 +1,279 @@
+* {margin: 0; padding: 0;font-family: 'Noto Sans KR', sans-serif;}
+img {display: block;}
+a {text-decoration: none; color: black;}
+
+
+
+/************** header **************/
+.header {
+  /* height: 100px; */
+  padding: 20px;
+  background: #FEF100;
+  position: relative;
+}
+
+.logo {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto;
+}
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+
+#chec01 {display: none;}
+#chec01:checked ~ .open {display: none;}
+#chec01:checked ~ .close {display: block;}
+
+#chec01 ~ .close {display: none;}
+#chec01 ~ .open {display: block;}
+
+#chec01:checked ~ .btn_page {left: 0;}
+
+.open {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  font-size: 30px;
+}
+.close {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  font-size: 30px;
+}
+
+/***** Btn_page *****/
+.btn_page {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  left: -120%;
+  top: 100px;
+  background: white;
+  transition: all 0.3s;
+}
+/* login */
+.login {
+  padding: 25px 25px 10px 25px;
+  text-align: center;
+}
+.login p {
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.login .join {
+  display: flex;
+}
+.login .join p {
+  width: calc(50% - 5px);
+  height: 40px;
+  line-height: 40px;
+  border-radius: 30px;
+  margin-right: 10px;
+  background: #FEF100;
+}
+.login .join p:last-child {
+  background: #ccc;
+  margin: 0;
+}
+/* intro */
+.intro {
+  display: flex;
+  background: #FEF100;
+  text-align: center;
+  padding: 0 25px 0 25px;
+}
+.intro>div {
+  width: 33.3%;
+  height: 110px;
+  flex-grow: 1;
+}
+.intro i {
+  font-size: 53px;
+  margin-top: 17px;
+}
+.intro .txt {
+  font-size: 14px;
+}
+/* cate */
+.cate {
+  padding: 0 25px 0 25px;
+  margin-top: 20px;
+}
+.cate .top,
+.cate .bottom {
+  display: flex;
+  margin-bottom: 10px;
+}
+.cate .top>div,
+.cate .bottom>div {
+  width: calc(50% - 5px);
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  /* margin-right: 10px; */
+}
+.cate .top figure,
+.cate .bottom figure {
+  /* width: 100%; */
+  height: 170px;
+}
+.cate .top figure img,
+.cate .bottom figure img {
+  width: 100%;
+  height: 170px;
+}
+.cate .txt {
+  padding: 5px;
+  text-align: center;
+  font-weight: 500;
+}
+.cate .top .rice {
+  margin-left: 10px;
+}
+.cate .bottom .desert {
+  margin-left: 10px;
+}
+
+
+/************** main_visual **************/
+.main_visual {
+  height: 200px;
+}
+.main_visual img {
+  width: 100%;
+  height: 200px;
+}
+
+
+/************** product_intro **************/
+.product_intro {
+  padding: 0 25px 0 25px;
+  background: red;
+}
+.product_intro h4 {
+  margin-top: 10px;
+  text-align: center;
+}
+.product_intro .line {
+  width: 50px;
+  height: 1px;
+  background: black;
+  margin: 10px auto;
+}
+.product_intro .greet {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#rad_min, #rad_rice, #rad_ramen, #rad_desert {display: none;}
+
+#rad_min:checked ~ .icon_label .min_b,
+#rad_rice:checked ~ .icon_label .rice_b,
+#rad_ramen:checked ~ .icon_label .ramen_b,
+#rad_desert:checked ~ .icon_label .desert_b {
+  background: #555;
+  color: white;
+  border: none;
+}
+
+#rad_min:checked ~ .min_box,
+#rad_rice:checked ~ .rice_box,
+#rad_ramen:checked ~ .ramen_box,
+#rad_desert:checked ~ .desert_box {display: block;}
+
+#rad_min ~ .min_box,
+#rad_rice ~ .rice_box,
+#rad_ramen ~ .ramen_box,
+#rad_desert ~ .desert_box {display: none;}
+
+/* icon_label */
+.icon_label {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.icon_label label {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+.icon_label .icon_box {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+.icon_label .icon_box span {
+  width: 100%;
+  height: 70px;
+  font-size: 40px;
+  line-height: 70px;
+  text-align: center;
+}
+
+
+/* product_intro common */
+.min_box .first_min,
+.rice_box .first_rice,
+.ramen_box .first_ramen,
+.desert_box .first_desert {
+  display: flex;
+}
+.product_intro .food {
+  width: calc(33.33333% - 5px);
+  height: 140px;
+  margin-right: 10px;
+  border: 1px solid black;
+  font-size: 10px;
+  text-align: center;
+}
+.product_intro .food:last-child {
+  margin: 0;
+}
+.product_intro .food figure {
+  width: 100%;
+  height: 100px;
+}
+.product_intro .food figure img {
+  width: 100%;
+  height: 100px;
+}
+.product_intro .pro_name {
+  padding-top: 4px;
+}
+
+/* min_box */
+.min_box .second_min {
+  display: none;
+}
+.min_box .label_num {
+  display: flex;
+  justify-content: center;
+}
+.min_box .num {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+#Fbox, #Sbox {display: none;}
+#Fbox:checked ~ .first_min {display: flex;}
+#Sbox:checked ~ .second_min {display: flex;}
+
+#Fbox ~ .first_min {display: none;}
+#Sbox ~ .second_min {display: none;}
+
+#Fbox:checked ~ .label_num .num01 {background: #555;}
+#Sbox:checked ~ .label_num .num02 {background: #555;}
+
+
+
+/************** product_popular **************/

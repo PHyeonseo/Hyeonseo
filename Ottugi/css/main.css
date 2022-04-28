@@ -3,7 +3,6 @@ img {display: block;}
 a {text-decoration: none; color: black;}
 
 
-
 /************** header **************/
 .header {
   /* height: 100px; */
@@ -54,6 +53,7 @@ a {text-decoration: none; color: black;}
   top: 100px;
   background: white;
   transition: all 0.3s;
+  z-index: 999;
 }
 /* login */
 .login {
@@ -151,7 +151,8 @@ a {text-decoration: none; color: black;}
 /************** product_intro **************/
 .product_intro {
   padding: 0 25px 0 25px;
-  background: red;
+  height: 322px;
+  /* background: red; */
 }
 .product_intro h4 {
   margin-top: 10px;
@@ -227,7 +228,7 @@ a {text-decoration: none; color: black;}
   width: calc(33.33333% - 5px);
   height: 140px;
   margin-right: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   font-size: 10px;
   text-align: center;
 }
@@ -247,6 +248,9 @@ a {text-decoration: none; color: black;}
 }
 
 /* min_box */
+.min_box {
+  position: relative;
+}
 .min_box .second_min {
   display: none;
 }
@@ -263,6 +267,17 @@ a {text-decoration: none; color: black;}
   margin-right: 5px;
   margin-top: 10px;
 }
+.min_box .left {
+  position: absolute;
+  top: 30%;
+  transform: translateY(-30%);
+}
+.min_box .right {
+  position: absolute;
+  top: 30%;
+  right: 0;
+  transform: translateY(-30%);
+}
 
 #Fbox, #Sbox {display: none;}
 #Fbox:checked ~ .first_min {display: flex;}
@@ -277,3 +292,229 @@ a {text-decoration: none; color: black;}
 
 
 /************** product_popular **************/
+.product_popular {
+  padding: 0 25px 0 25px;
+  margin-bottom: 10px;
+}
+.product_popular h4 {
+  margin-top: 10px;
+  text-align: center;
+}
+.product_popular .line {
+  width: 50px;
+  height: 1px;
+  background: black;
+  margin: 10px auto;
+}
+.product_popular .greet {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* pop_slide */
+.product_popular .pop_slide {
+  white-space: nowrap;
+  font-size: 0;
+  overflow: hidden;
+}
+.product_popular .pop_slide>div {
+  width: 100%;
+  height: 100px;
+  color: black;
+  display: inline-block;
+  position: relative;
+  transition: all 0.5s;
+}
+.pop_slide label {
+  display: block;
+  position: absolute;
+  top: 70%;
+  transform: translateY(-70%);
+  width: 20px;
+  height: 20px;
+}
+.pop_slide label img {
+  width: 20px;
+  height: 20px;
+}
+.pop_slide label:last-child {
+  display: block;
+  position: absolute;
+  top: 70%;
+  right: 0;
+  transform: translateY(-70%);
+  width: 20px;
+  height: 20px;
+}
+
+#pop_f, #pop_s, #pop_t {display: none;}
+
+#pop_f:checked ~ .pop_slide>div {transform: translateX(0);}
+#pop_s:checked ~ .pop_slide>div {transform: translateX(-100%);}
+#pop_t:checked ~ .pop_slide>div  {transform: translateX(-200%);}
+
+
+.pop_slide .pop div {
+  display: inline-block;
+  width: calc(33.33333% - 5px);
+  height: 140px;
+  margin-right: 10px;
+}
+.pop_slide .pop div img {
+  width: 100%;
+  height: 140px;
+}
+
+
+.product_popular .pop_num {
+  display: flex;
+  justify-content: center;
+}
+.product_popular .num {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-right: 5px;
+  margin-top: 10px;
+}
+
+#pop_f:checked ~ .pop_num .num01,
+#pop_s:checked ~ .pop_num .num02,
+#pop_t:checked ~ .pop_num .num03 {
+  background: #555;
+}
+
+
+/************** mall_d **************/
+.mall_d {
+  width: 100%;
+  height: 150px;
+  background: url(../img/d_mall_420.jpg) no-repeat center center;
+}
+.mall_d .txt {
+  text-align: center;
+  font-size: 12px;
+}
+.mall_d .txt p:nth-child(1) {
+  font-size: 12px;
+  color: red;
+  padding-top: 10px;
+}
+
+.mall_d .txt p:last-child {
+  width: 120px;
+  height: 25px;
+  line-height: 25px;
+  color: black;
+  background: white;
+  border: 1px solid black;
+  border-radius: 20px;
+  margin: 5px auto 0 auto;
+}
+
+
+/************** recipe_popular **************/
+.recipe_popular {
+  padding: 0 25px 0 25px;
+}
+.recipe_popular h4 {
+  margin-top: 10px;
+  text-align: center;
+}
+.recipe_popular .line {
+  width: 50px;
+  height: 1px;
+  background: black;
+  margin: 10px auto;
+}
+.recipe_popular .greet {
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.slide_recipe {
+  width: 100%;
+  overflow: hidden;
+}
+.recipe_box {
+  white-space: nowrap;
+  transition: all 0.4s;
+}
+.recipe_box  .first_recipe,
+.recipe_box  .second_recipe {
+  width: 100%;
+  display: inline-block;
+}
+.recipe_box .recipe {
+  width: calc(50% - 5px);
+  height: 200px;
+  margin-right: 10px;
+  display: inline-block;
+}
+.recipe_box .recipe:last-child {
+  margin: 0;
+}
+.recipe_box .recipe img {
+  width: 100% ;
+  height: 150px;
+}
+.recipe_box .recipe .txt {
+  height: 50px;
+  text-align: center;
+  font-size: 14px;
+}
+.recipe_box .recipe .txt a {
+  font-size: 11px;
+  color: #ccc;
+  padding: 2px;
+}
+
+#rad_rec01,#rad_rec02 {display: none;}
+#rad_rec01:checked ~ .slide_recipe .recipe_box {transform: translateX(0);}
+#rad_rec02:checked ~ .slide_recipe .recipe_box {transform: translateX(-102%);}
+
+
+.recipe_popular .rec_num {
+  display: flex;
+  justify-content: center;
+}
+.recipe_popular .num {
+  display: block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  margin-right: 5px;
+}
+
+#rad_rec01:checked ~ .rec_num .num01,
+#rad_rec02:checked ~ .rec_num .num02 {
+  background: #555;
+}
+
+
+
+/************** youtube **************/
+.youtube {
+  padding: 0 25px 0 25px;
+  text-align: center;
+  margin-top: 10px;
+}
+.youtube .tube {
+  width: 100%;
+  height: 230px;
+  border: 1px solid #000000;
+  margin-bottom: 5px;
+}
+.youtube h3 {
+  height: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+.youtube .tube iframe {
+  height: 200px;
+}
